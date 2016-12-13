@@ -19,17 +19,38 @@
 				<li><a href="#">+BOYS</a></li>
 				<li><a href="#">+GIRLS</a></li>
 				<li><a href="#"><img src="../images/section_1_slider/search_button.png" alt="search" /></a></li>
-				<li><a href="#"><img src="../images/section_1_slider/busket_item.png" alt="busket" /></a></li>
+				<li><a href="#" class="busket_info_button"><img src="../images/section_1_slider/busket_item.png" alt="busket" /></a></li>
 				<li><a href="#"><img src="../images/section_1_slider/hamburger_item.png" alt="menu" /></a></li>
 			</ul>
+			<div id="section1_busket">
+				<div class="row">
+					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">img</div>
+					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">nike</div>
+					<div class="buscket_item col-md-1 col-sm-1 col-xs-1">x3</div>
+					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">3800$</div>
+					<div class="buscket_item col-md-2 col-sm-2 col-xs-2"><a href="#" class="close_button">x</a></div>
+				</div>
+				<table>
+					<tr>
+						<td>sum</td>
+						<td>1200</td>
+					</tr>
+					<tr>
+						<td>vat</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td>total</td>
+						<td>1400</td>
+					</tr>
+				</table>
+				<a href="#" class="alink">View Cart</a>
+				<a href="#">Checkout</a>
+			</div>
 		</div>
 
 		<div class="container">
-			<img class="section1_nike_logo" src="../images/section_1_slider/logo_nike.png" />
-			<img class="section1_shoes" src="../images/section_1_slider/nike_lebron.png" />
-			<div class="section1_text">
-				<p>LEBRON XIII 25K</p>
-			</div>
+			<img class="section1_shoes" src="../images/section_1_slider/content_image.png" />
 			<div class="section1_price">
 				<p>Started From  <span>728$</span></p>
 			</div>
@@ -82,13 +103,13 @@
 					<p class="item_collection">Men’s Basketball Shoes</p>
 					<p class="item_price">$140</p>
 				</div>
-				<div class="item col-md-4 col-sm-6 col-xs-12">
+				<div class="item col-md-4 col-sm-12 col-xs-12">
 					<img src="../images/section_3_shoes/shoes_3.png" />
 					<p class="item_name">Lebron XIII Limited </p>
 					<p class="item_collection">Men’s Basketball Shoes </p>
 					<p class="item_price">$140</p>
 				</div>
-				<div class="item col-md-4 col-sm-6 col-xs-12">
+				<div class="item col-md-4 col-sm-12 col-xs-12">
 					<img src="../images/section_3_shoes/shoes_4.png" />
 					<p class="item_name">JORDAN ULTRA FLY </p>
 					<p class="item_collection">Men’s Basketball Shoes </p>
@@ -108,11 +129,22 @@
 				</div>
 			</div>
 		</div>
+		<!-- modal-window with information about product item -->
+		<div class="modal_wrapper" id="modalWindow">
+			<div class="modal_div">
+				<div>
+					Super Shoes
+				</div>
+				<i class="close_icon" onclick="hideModal(2)" id="closeIcon">x</i>
+			</div>
+		</div>
+		<!--End of modal-window -->
+
 	</section>
 
 	<!-- Scripts
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="/js/custom.js"></script>
+	<script src="../js/custom.js"></script>
 </body>
 </html>
