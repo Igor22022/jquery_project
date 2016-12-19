@@ -23,7 +23,8 @@ $(document).ready(function(){
   });
 
   /*--- show/hide Modal Wrapper ---*/
-  $('.about_item').on('click', function(){
+  $('.about_item').on('click', function(e){
+    e.preventDefault();
     $('.modal_wrapper').show(600);
   });
   $('.close_icon').on('click', function(){
