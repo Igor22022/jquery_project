@@ -1,4 +1,25 @@
+var products = {};
 $(document).ready(function(){
+
+  $.get('products_data.json', function(data){
+    products = data;
+  }, 'json');
+
+  var builder = function() {
+    var getProductTemplate = function(data) {
+      return '<div class="item col-md-4 col-sm-6 col-xs-12" data-id=' +data.id+ >' +"'"
+          <img src="../images/section_3_shoes/shoes_1.png" />
+          <p class="item_name">KYRIE 2 </p>
+          <p class="item_collection">Men’s Basketball Shoes</p>
+          <p class="item_price">$140</p>
+        </div>
+    }
+
+    return {
+        buildProduct: getProductTemplate;
+    }
+  }
+
   /*--- add Buy Button and Details Button to Product placeholder---*/
   $('.section3 .item').append("<a href='#' class='buy_button'>Buy Now</a>");
   $('.section3 .item').append("<a href='#' class='about_item'>Details</a>");

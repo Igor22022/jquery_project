@@ -1,0 +1,92 @@
+[
+
+{
+ "id":1,
+ "title":"NIKE ZOOM LEBRON SOLDIER 10",
+ "description":"Basketball shoes",
+ "manufacturer":"Nike",
+ "male":"men",
+ "price":120,
+ "sizes":[36,37,38,39,40],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_5.png"
+},
+{
+ "id":2,
+ "title":"KYRIE 2",
+ "description":"Basketball shoes",
+ "manufacturer":"Nike",
+ "male":"women",
+ "price":130,
+ "sizes":[35,36,37,38,39],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_1.png"
+},
+{
+ "id":3,
+ "title":"Lebron XIII Limited",
+ "description":"Basketball shoes",
+ "manufacturer":"Nike",
+ "male":"men",
+ "price":140,
+ "sizes":[36,37,38,39,40,41,42,43],
+ "colors":["black","white"],
+ "image":"../images/section_3_shoes/shoes_2.png"
+},
+{
+ "id":4,
+ "title":"Lebron XII",
+ "description":"Basketball shoes",
+ "manufacturer":"Nike",
+ "male":"men",
+ "price":130,
+ "sizes":[38,39,40,41,42,43,44,45],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_3.png"
+},
+{
+ "id":5,
+ "title":"KYRIE 2",
+ "description":"Basketball shoes",
+ "manufacturer":"Nike",
+ "male":"women",
+ "price":160,
+ "sizes":[35,36,37,38,39],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_4.png"
+},
+{
+ "id":6,
+ "title":"DULTRA FLY",
+ "description":"Running shoes",
+ "manufacturer":"Nike",
+ "male":"men",
+ "price":160,
+ "sizes":[36,37,38,39,41,42,43,44],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_5.png"
+},
+{
+ "id":7,
+ "title":"KYRINA 12",
+ "description":"Running shoes",
+ "manufacturer":"Nike",
+ "male":"women",
+ "price":110,
+ "sizes":[35,37,38,39],
+ "colors":["black","white","blue", "red"],
+ "image":"../images/section_3_shoes/shoes_1.png"
+},
+{
+ "id":8,
+ "title":"DULTRA FLY",
+ "description":"Running shoes",
+ "manufacturer":"Nike",
+ "male":"men",
+ "price":160,
+ "sizes":[36,37,38,39,41,42,43,44],
+ "colors":["black","white","blue"],
+ "image":"../images/section_3_shoes/shoes_5.png"
+}
+
+]
