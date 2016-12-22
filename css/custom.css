@@ -203,6 +203,9 @@ section1_pagination, section1_social_icons{
 
 /*--------Section 3-----------*/
 
+.section3{
+	position: relative;
+}
 .section3 .container{
 	height: 800px;
 	position: relative;
@@ -224,8 +227,8 @@ section1_pagination, section1_social_icons{
 	font-weight: bold;
 }
 .item_collection{
-	font-size: 10px;
-	color: #eff2f3;
+	font-size: 12px;
+	color: #000;
 }
 .item_price{
 	font-size: 24px;
@@ -289,5 +292,40 @@ section1_pagination, section1_social_icons{
 	right: 5px;
 	font-style: normal;
 	cursor: pointer;
+}
+
+/*--- Filter Block ---*/
+.filter_block{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 200px;
+	border: thin solid #eff2f3;
+	padding: 10px 10px 10px 20px; 
+	font-weight: bold;
+}
+.filter_block form{
+	margin-bottom: 40px;
+}
+.filter_block p{
+	margin-left: -10px;
+}
+.filter_block label{
+	font-weight: normal;
+}
+.filter_block input[type=submit]{
+	width: 100px;
+	height: 40px;
+	font-weight: normal;
+	background: #fff;
+	color: #000;
+	border: thin solid #eff2f3;
+	float: right;
+	clear: both;
+}
+.filter_block input[type="submit"]:hover{
+	background: #fff;
+	color: #522780;
+	border: thin solid #522780;
 }
 /*--- End of Section 3 Modal Wrapper---*/
