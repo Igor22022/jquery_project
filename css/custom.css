@@ -99,7 +99,7 @@ section1_pagination, section1_social_icons{
 	top: 102%;
 	right: 2%;
 	width: 400px;
-	height: 300px;
+	height: auto;
 	background: #eff2f3;
 	border-radius: 4px;
 	z-index: 2;
@@ -111,7 +111,7 @@ section1_pagination, section1_social_icons{
 	width: 100%;
 	background: #fff;
 }
-.close_button{
+.delete_item_button{
 	display: inline-block;
 	width: 25px;
 	height: 25px;
@@ -123,7 +123,7 @@ section1_pagination, section1_social_icons{
 	text-decoration: none;
 	color: #fff;
 }
-.close_button:hover{
+.delete_item_button:hover{
 	text-decoration: none;
 	color: #000;
 }
@@ -149,6 +149,10 @@ section1_pagination, section1_social_icons{
 .alink{
 	margin-left: 60%;
 	margin-right: 12px;
+}
+
+.buscket_item img{
+	width: 100%;
 }
 
 /*--------Section 2-----------*/
@@ -275,14 +279,51 @@ section1_pagination, section1_social_icons{
 	display: none;
 }
 .modal_div{
-	width: 450px;
-	height: 400px;
+	width: 60vw;
+	height: 80vh;
 	margin: 50px auto;
 	border: 1px solid #000;
 	padding: 15px;
 	position: relative;
 	background: #fff;
 	display: block;
+	z-index: 5;
+}
+#overlay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0, 0);
+	z-index: 3;
+
+}
+
+.modal_div>div{
+	position: relative;
+	padding-top: 40px;
+	height: 100%;
+}
+.modal_div img{
+	float: left;
+    width: 60%;
+}
+#sizes{
+	width: 60px;
+	height: 20px;
+	border: #522780;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+ul#colors{
+	margin-top: 10px;
+	list-style-type: none;
+	display: inline-block;
+}
+ul#colors li{
+	padding-left: 15px;
+	display: inline-block;
 }
 
 .close_icon{
@@ -292,6 +333,11 @@ section1_pagination, section1_social_icons{
 	right: 5px;
 	font-style: normal;
 	cursor: pointer;
+}
+
+.modal_div .buy_button, .modal_div .buy_button:visited{
+	
+	display: block;
 }
 
 /*--- Filter Block ---*/
@@ -322,6 +368,7 @@ section1_pagination, section1_social_icons{
 	border: thin solid #eff2f3;
 	float: right;
 	clear: both;
+	margin-right: 20px;
 }
 .filter_block input[type="submit"]:hover{
 	background: #fff;

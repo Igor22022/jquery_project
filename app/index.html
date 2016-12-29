@@ -7,6 +7,7 @@
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" type="text/css" href="../css/custom.css">
+	<link rel="stylesheet" type="text/css" href="../css/media.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -23,25 +24,21 @@
 				<li><a href="#"><img src="../images/section_1_slider/hamburger_item.png" alt="menu" /></a></li>
 			</ul>
 			<div id="section1_busket">
-				<div class="row">
-					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">img</div>
-					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">nike</div>
-					<div class="buscket_item col-md-1 col-sm-1 col-xs-1">x3</div>
-					<div class="buscket_item col-md-3 col-sm-3 col-xs-3">3800$</div>
-					<div class="buscket_item col-md-2 col-sm-2 col-xs-2"><a href="#" class="close_button">x</a></div>
+				<div class="rows">
+					<!-- place for product item in cart -->
 				</div>
 				<table>
 					<tr>
 						<td>sum</td>
-						<td>1200</td>
+						<td class="sum"></td>
 					</tr>
 					<tr>
 						<td>vat</td>
-						<td>200</td>
+						<td class="vat"></td>
 					</tr>
 					<tr>
 						<td>total</td>
-						<td>1400</td>
+						<td class="total_price"></td>
 					</tr>
 				</table>
 				<a href="#" class="alink">View Cart</a>
@@ -87,43 +84,41 @@
 			</div>
 		</div>
 	</section>
+
 <!-- Section with product items -->
 	<section class="section3">
 		<div class="filter_block">
 			<form action="">
 				<p>Size of shoes</p>
-				<label><input type="checkbox" name="size" value="35" /> size 35 </label><br>
-				<label><input type="checkbox" name="size" value="36" /> size 36 </label><br>
-				<label><input type="checkbox" name="size" value="37" /> size 37 </label><br>
-				<label><input type="checkbox" name="size" value="38" /> size 38 </label><br>
-				<label><input type="checkbox" name="size" value="39" /> size 39 </label><br>
-				<label><input type="checkbox" name="size" value="40" /> size 40 </label><br>
-				<label><input type="checkbox" name="size" value="41" /> size 41 </label><br>
-				<label><input type="checkbox" name="size" value="42" /> size 42 </label><br>
-				<label><input type="checkbox" name="size" value="43" /> size 43 </label><br>
-				<label><input type="checkbox" name="size" value="44" /> size 44 </label><br>
-				<label><input type="checkbox" name="size" value="45" /> size 45 </label><br>
-				<label><input type="checkbox" name="size" value="46" /> size 46 </label><br>
-				<label><input type="checkbox" name="size" value="47" /> size 47 </label><br>
-				<input type="submit" value="Filter">
-			</form> 
-			<form action="">
+				<div class="filter_sizes"></div>
+				
 				<p>Gender</p>
-				<label><input type="checkbox" name="gender" value="men" /> Men's </label><br>
-				<label><input type="checkbox" name="gender" value="women" /> Women's </label><br>
-				<input type="submit" value="Filter">
+				<div class="filter_gender"></div>
 			</form> 
 		</div>
 		<div class="container">
 			<div class="row"></div>
 		</div>
+
 		<!-- modal-window with information about product item -->
 		<div class="modal_wrapper" id="modalWindow">
 			<div class="modal_div">
-				<div>
-					Super Shoes
+				<img src="" />
+				<div >
+					<p id="model">model: </p>
+					<p id="collection">collection: </p>
+					<p id="gender"> shoes</p>
+					<p id="price">price: </p>
+					<p id="manufacturer">made by: </p>
+					<span>sizes: </span><select id="sizes"> </select><br />
+					<span>colors: </span><ul id="colors"></ul>
+
 				</div>
+				<a href='#' id='addToCart' class='buy_button'>Add to Cart</a>
+
 				<i class="close_icon" id="closeIcon">x</i>
+			</div>
+			<div id="overlay">
 			</div>
 		</div>
 		<!--End of modal-window -->
@@ -134,5 +129,6 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="../js/custom.js"></script>
+	<script src="../js/plugin.js"></script>
 </body>
 </html>

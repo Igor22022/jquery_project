@@ -1,0 +1,46 @@
+@media screen and (max-width: 480px) {
+
+	.modal_div{
+		margin-top: 10px;
+		width: 80vw;
+    	height: 92vh;
+    	font-size: 10px;
+    	min-height: 400px;
+    	overflow-y: visible;
+
+	}
+	.modal_div img{
+    	width: 96%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.filter_block {
+    	display: none;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 1060px) {
+	
+	.filter_block {
+    	width: 120px;
+	}
+	.filter_block input[type=submit]{
+		margin-right: 0px;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 880px) {
+
+	.modal_div{
+		margin-top: 10px;
+		width: 50vw;
+    	height: 92vh;
+    	font-size: 12px;
+    	min-height: 500px;
+
+	}
+	.modal_div img{
+    	width: 96%;
+	}
+
+}
